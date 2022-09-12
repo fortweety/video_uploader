@@ -1,0 +1,5 @@
+.gitattributes
+.gitignore
+tmp
+node_modules
+.env
