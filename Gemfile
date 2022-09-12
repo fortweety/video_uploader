@@ -15,6 +15,8 @@ gem 'streamio-ffmpeg', '~> 3.0', '>= 3.0.2'
 gem 'image_processing'
 gem 'active_model_serializers'
 gem 'sidekiq'
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 

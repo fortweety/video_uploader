@@ -5,7 +5,7 @@ import App from "../components/app";
 import actionCable from 'actioncable'
 
 const CableApp = {}
-CableApp.cable = actionCable.createConsumer('ws://app:3000/cable')
+CableApp.cable = actionCable.createConsumer('ws://localhost:3000/cable')
 // Connects to data-controller="react"
 export default class extends Controller {
   connect() {

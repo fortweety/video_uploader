@@ -29,6 +29,7 @@ function App({ cable }) {
 
   const addVideo = (data) => {
     setVideos([ ...videos, data])
+    setOpenedForm(false)
   }
 
   useEffect(() => {
@@ -57,7 +58,7 @@ function App({ cable }) {
       {
         formOpened ?
         <div>
-          <button onClick={() => setOpenedForm(false)}>Close video</button>
+          <button onClick={() => setOpenedForm(false)}>Close form</button>
           <VideoForm categories={categories} addVideo={addVideo} />
         </div>
         :
