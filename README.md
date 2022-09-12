@@ -1,9 +1,9 @@
 # create postgres user for authenticate
 
-postgres -su
-psql
-CREATE USER test_c with password 'test_ppass';
-ALTER USER test_c WITH SUPERUSER;
+- postgres -su
+- psql
+- CREATE USER test_c with password 'test_ppass';
+- ALTER USER test_c WITH SUPERUSER;
 
 # set env variables
 cp .env.sample .env
